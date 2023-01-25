@@ -1,0 +1,54 @@
+.firstContainer {
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0 5rem 0;
+}
+
+.txtContainer {
+    width: 37rem;
+    margin: 0 1rem 0 2rem;
+}
+
+.txtContainer h1 {
+    display: flex;
+    justify-content: left;
+    font-size: 4rem;
+}
+
+.txtContainer p {
+    display: flex;
+    justify-content: left;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.imgContainer {
+    display: flex;
+    justify-content: left;
+    width: 37rem;
+    margin: -7rem 2rem 0 1rem;
+}
+
+.imgContainer img {
+    width: 35rem;
+}
+
+
+
+.secondContainer {
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    gap: 3rem;
+    padding-bottom: 5rem;
+}
+
+.secondContainer img {
+    width: 20rem;
+}
+
+.smallContainer {
+    text-align: center;
+    font-size: 1.5rem;
+    max-width: 22.5rem;
+}

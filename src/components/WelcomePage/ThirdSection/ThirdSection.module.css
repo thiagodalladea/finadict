@@ -1,0 +1,44 @@
+.footer {
+    background: var(--green-300);
+    color: var(--white);
+    padding: 5rem 0 5rem 0;
+}
+
+.globalContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.firstContainer {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.firstContainer img {
+    max-width: 30rem;
+    height: auto;
+}
+
+.line {
+    height: 80px;
+    border-right: 0.2rem solid var(--white);
+}
+
+.secondContainer {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.secondContainer img {
+    max-width: 5rem;
+}
+
+.txtFooter {
+    display: flex;
+    justify-content: center;
+    font-size: 1.75rem;
+    padding: 5rem 0 0 0;
+}

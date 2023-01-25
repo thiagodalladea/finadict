@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import style from './FirstSection.module.css';
-import calculator from '../../assets/blenders/calculator.png';
+import calculator from '../../../assets/blenders/calculator.png';
 import { Header } from './Header.js';
 
 export function FirstSection() {
