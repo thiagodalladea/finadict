@@ -1,5 +1,6 @@
 .firstSection {
     background: var(--green-200);
+    height: 100vh;
 }
 
 .container {
@@ -15,6 +16,8 @@
 }
 
 .txtContainer h1 {
+    display: flex;
+    justify-content: left;
     font-size: 4rem;
 }
 
@@ -27,16 +30,20 @@
 
 .imgContainer {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     width: 37rem;
     margin: -3rem 2rem 0 1rem;
+}
+
+.imgContainer img {
+    width: 80%;
 }
 
 .registerButton {
     display: flex;
     justify-content: center;
     text-decoration: none;
-    padding: 5rem 0 10rem 0;
+    padding-top: 5rem;
 }
 
 .registerButton button {
