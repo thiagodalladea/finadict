@@ -1,0 +1,41 @@
+.header {
+    background: var(--green-200);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    white-space: nowrap;
+    padding-top: 3rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem 0 2rem;
+}
+
+.logo img {
+    width: 17.5rem;
+}
+
+.loginInfo {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 2rem;
+    margin: 0 2rem 0 1rem;
+}
+
+.loginInfo p {
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+.loginInfo button {
+    background: var(--);
+    font-size: 1.2rem;
+    color: var(--green-200);
+    border: 0;
+    height: 2.5rem;
+    width: 10rem;
+    border-radius: 0.5rem;
+}
