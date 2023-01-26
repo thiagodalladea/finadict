@@ -9,7 +9,7 @@ export function Header() {
 			</div>
 			
 			<div className={ style.loginInfo }>
-				<p>Entrar</p>
+				<a href='/login'>Entrar</a>
 				<button>Cadastrar-se</button>
 			</div>
 		</div>

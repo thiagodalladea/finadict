@@ -1,8 +1,9 @@
 .header {
     background: var(--green-200);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    gap: 3rem;
     white-space: nowrap;
     padding-top: 4rem;
 }
@@ -10,7 +11,7 @@
 .logo {
     display: flex;
     align-items: center;
-    margin: 0 1rem 0 2rem;
+    margin: 0 0 0 18%;
 }
 
 .logo img {
@@ -21,13 +22,14 @@
     display: flex;
     align-items: center;
     white-space: nowrap;
-    gap: 2rem;
-    margin: 0 2rem 0 1rem;
+    margin: 0 18% 0 0;
 }
 
-.loginInfo p {
+.loginInfo a {
+    width: 50%;
     font-size: 1.2rem;
     color: var(--white);
+    text-decoration: none;
 }
 
 .loginInfo button {
@@ -38,4 +40,13 @@
     height: 2.5rem;
     width: 10rem;
     border-radius: 0.5rem;
+}
+
+@media (max-width: 700px) {
+    .logo {
+        margin: 0 0 0 10%;
+    }
+    .logo img {
+        width: 10rem;
+    }
 }
