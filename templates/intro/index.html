@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="sphere-container">
+        <div id="sphere1"></div>
+    </div>
+    <div class="contasphere-containeriner">
+        <div id="sphere2"></div>
+    </div>
+
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="txt-container">
+                <h2>Unlock the potential of your</h2>
+                <h1 id="dynamic-text">Finances</h1>
+                <h2>with Finadict</h2>
+                <div class="info">
+                    <p>Discover a new way to manage your family and friend finances.</p>
+                    <p>Finadict is the comprehensive solution to simplify and strengthen your financial ties.</p>
+                </div>
+            </div>
+            <div class="img-container">
+                <img src="{% static 'assets/images/illustration/Finance-cuate.svg' %}">
+            </div>
+        </div>
+        <div class="btn-section">
+            <button class="btn-start-now">Start now</button>
+        </div>
+        
+        <div class="phrase-section">
+            <h2>Achieve financial stability with <span class="highlight">Finadict</span></h2>
+            <div class="subtitle-section">
+                <p>Organize, share and accomplish your goals in a simple and effective way.</p>
+            </div>
+        </div>
+
+        <div class="feature-wrapper">
+            <div class="feature">
+                <img src="{% static 'assets/images/illustration/budgeting.svg' %}">
+                <p>Create and monitor budgets together, ensuring efficient and shared financial management.</p>
+            </div>
+            <div class="feature">
+                <img src="{% static 'assets/images/illustration/metrics.svg' %}">
+                <p>Visualize your expenses intuitively with detailed charts and reports for deeper financial analysis.</p>
+            </div>
+            <div class="feature">
+                <img src="{% static 'assets/images/illustration/transaction.svg' %}">
+                <p>Access a comprehensive transaction history to track and review your financial activities.</p>
+            </div>
+        </div>
+
+        <div class="phrase-section">
+            <h2>Uncover simplicity taken to excellence</h2>
+            <div class="subtitle-section">
+                <p>With Finadict, ease of use meets maximum performance, delivering a financial experience that is both intuitive and efficient like never before.</p>
+            </div>
+            <img src="{% static 'assets/images/illustration/dashboard.png' %}">
+        </div>
+
+        <div class="content-wrapper">
+            <div class="txt-container">
+                <h2>Plan <span class="highlight">today.</span></h2>
+                <h2>Achieve <span class="highlight">tomorrow.</span></h2>
+                <div class="info">
+                    <p>With Finadict, your financial journey gains clarity and efficiency. Transform your goals into reality through intuitive and collaborative financial management, providing the peace of mind needed to reach your dreams.</p>
+                </div>
+            </div>
+            <div class="img-container">
+                <img src="{% static 'assets/images/illustration/Investing-cuate.svg' %}">
+            </div>
+        </div>
+
+        <div class="phrase-section">
+            <h1>Everything you need to know</h1>
+        </div>
+
+        <div class="info-container">
+            <div class="info-feature">
+                <span>Automatic Splitting:</span>
+                <p>We simplify expense splitting automatically, without any extra effort. Each transaction is intelligently calculated, ensuring everyone contributes fairly.</p>
+            </div>
+            <div class="info-feature">
+                <span>Detailed Analytics:</span>
+                <p>Explore intuitive charts and detailed reports to understand your finances thoroughly. Clear visualization of your spending patterns aids in making informed decisions.</p>
+            </div>
+            <div class="info-feature">
+                <span>Unwavering Security:</span>
+                <p>Your security is our priority, with state-of-the-art encryption technologies. Your financial information is kept absolutely confidential, ensuring peace of mind with every transaction.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const words = ["Dreams", "Future", "Wealth", "Investments", "Freedom", "Finances"];
+        let currentIndex = 0;
+        const dynamicText = document.getElementById("dynamic-text");
+    
+        function changeWord() {
+            dynamicText.classList.add("fade-out");
+            setTimeout(() => {
+                dynamicText.textContent = words[currentIndex];
+                dynamicText.classList.remove("fade-out");
+                currentIndex = (currentIndex + 1) % words.length;
+            }, 500);
+        }
+    
+        setInterval(changeWord, 2800);
+    </script>
+    
+
+{% endblock %}
