@@ -1,0 +1,32 @@
+{% extends 'base_login.html' %}
+{% load static %}
+{% block content %}
+    <div class="sphere-container">
+        <div id="sphere1"></div>
+    </div>
+    <div class="contasphere-containeriner">
+        <div id="sphere2"></div>
+    </div>
+
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="txt-container">
+                <h2>Unlock the potential of your</h2>
+                <h1 id="dynamic-text">Finances</h1>
+                <h2>with Finadict</h2>
+                <div class="info">
+                    <p>Discover a new way to manage your family and friend finances.</p>
+                    <p>Finadict is the comprehensive solution to simplify and strengthen your financial ties.</p>
+                </div>
+            </div>
+            <div class="img-container">
+                <img src="{% static 'assets/images/illustration/Finance-cuate.svg' %}">
+            </div>
+        </div>
+        <div class="btn-section">
+            <button class="btn-start-now">Start now</button>
+        </div>
+    </div>
+    
+
+{% endblock %}
