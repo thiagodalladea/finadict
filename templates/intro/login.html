@@ -1,32 +1,46 @@
 {% extends 'base_login.html' %}
 {% load static %}
 {% block content %}
-    <div class="sphere-container">
-        <div id="sphere1"></div>
-    </div>
-    <div class="contasphere-containeriner">
-        <div id="sphere2"></div>
-    </div>
-
-    <div class="container">
-        <div class="content-wrapper">
-            <div class="txt-container">
-                <h2>Unlock the potential of your</h2>
-                <h1 id="dynamic-text">Finances</h1>
-                <h2>with Finadict</h2>
-                <div class="info">
-                    <p>Discover a new way to manage your family and friend finances.</p>
-                    <p>Finadict is the comprehensive solution to simplify and strengthen your financial ties.</p>
-                </div>
-            </div>
-            <div class="img-container">
-                <img src="{% static 'assets/images/illustration/Finance-cuate.svg' %}">
-            </div>
-        </div>
-        <div class="btn-section">
-            <button class="btn-start-now">Start now</button>
-        </div>
-    </div>
     
+<div class="container">
+    <div class="login-form">
+        <h1>Log in in with your email</h1>
+        <h3>Use your email to log in to your account</h3>
+
+        <script src="https://accounts.google.com/gsi/client?hl=en" async></script>
+        <div id="g_id_onload"
+            data-client_id="YOUR_GOOGLE_CLIENT_ID"
+            data-login_uri="https://your.domain/your_login_endpoint"
+            data-auto_prompt="false">
+        </div>
+        <div class="g_id_signin"
+            data-type="standard"
+            data-size="large"
+            data-theme="filled_blue"
+            data-text="sign_in_with"
+            data-shape="circle"
+            data-logo_alignment="left">    
+        </div>
+        <h2>OR</h2>
+        <form>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="user@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <a href="">Forgot your password?</a>
+            </div>
+
+            <button type="submit" class="login-button">Log in</button>
+
+            <div class="form-group">
+                <a id="create-account" href="">Create account</a>
+            </div>
+        </form>
+    </div>
+</div>
 
 {% endblock %}

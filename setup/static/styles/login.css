@@ -1,0 +1,146 @@
+body {
+    background-color: #EEEEEE;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 25px;
+    width: 100%;
+    max-width: 560px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #a1a1a1;
+    margin-top: 50px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.login-form h1 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.login-form h2 {
+    font-weight: 300;
+    font-size: 1rem;
+    color: #9C9C9C;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.login-form h3 {
+    font-weight: 300;
+    font-size: 1rem;
+    color: #9C9C9C;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.login-form form {
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group a {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.form-group a:visited {
+    color: #007bff;
+}
+
+.form-group a:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #23C36D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.login-button:hover {
+    background-color: #1C814A;
+    transition: 0.5s;
+}
+
+#create-account {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-bottom: 100px;
+    }
+
+    .login-form {
+        padding: 15px;
+        margin: 20px;
+        width: 100%;
+        margin-top: 20px;
+   }
+
+    .login-form h3 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin-bottom: 250px;
+    }
+
+    .login-form h3 {
+        text-align: center;
+    }
+}

@@ -27,17 +27,6 @@ body {
     filter: blur(10000px);
     z-index: 1000;
 }
-#sphere3 {
-    position: absolute;
-    left: -900px;
-    top: 3200px;
-    width: 670px;
-    height: 670px;
-    background-color: #23C36D;
-    border-radius: 50%;
-    filter: blur(500px);
-    z-index: 1000;
-}
 
 .container {
     display: flex;
