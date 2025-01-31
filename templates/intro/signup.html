@@ -1,0 +1,39 @@
+{% extends 'base_login.html' %}
+{% load static %}
+{% block content %}
+    
+<div class="content">
+    <div class="image">
+        <img src="{% static 'assets/images/illustration/Investment-data-amico.svg' %}">
+    </div>
+    <div class="sign-form">
+        <div class="login-form">
+            <h1>Get started for free</h1>
+            <h3>Fill out your details to get started</h3>
+            <form>
+                <div class="form-group">
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="user@email.com" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+    
+                <button type="submit" class="login-button">Sign in</button>
+    
+                <div class="form-group">
+                    <p>You acknowledge that you read and agree to our <span class="span-bold">Terms of Service</span> and our <span class="span-bold">Privacy Policy</span>.</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

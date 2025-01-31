@@ -1,0 +1,67 @@
+.content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 100px
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    max-width: 640px;
+    margin-left: 25px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.image img {
+    align-self: center;
+    width: 90%;
+}
+
+.sign-form {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    max-width: 640px;
+    margin-right: 25px;
+}
+
+.form-group p {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #9C9C9C;
+    text-align: center;
+}
+
+.span-bold {
+    font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+    .image {
+        display: none;
+    }
+
+    .sign-form {
+        width: 80%;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sign-form {
+        width: 90%;
+    }
+}
