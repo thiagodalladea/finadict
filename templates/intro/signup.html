@@ -10,6 +10,21 @@
         <div class="login-form">
             <h1>Get started for free</h1>
             <h3>Fill out your details to get started</h3>
+            <script src="https://accounts.google.com/gsi/client?hl=en" async></script>
+            <div id="g_id_onload"
+                data-client_id="YOUR_GOOGLE_CLIENT_ID"
+                data-login_uri="https://your.domain/your_login_endpoint"
+                data-auto_prompt="false">
+            </div>
+            <div class="g_id_signin"
+                data-type="standard"
+                data-size="large"
+                data-theme="outline"
+                data-text="sign_in_with"
+                data-shape="circle"
+                data-logo_alignment="left">    
+            </div>
+            <h2>OR</h2>
             <form>
                 <div class="form-group">
                     <label for="name">Full name</label>
