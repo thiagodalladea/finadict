@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top {
+    height: 180px;
+    background-color: #1C814A;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.box {
+    background-color: red;
+    border-radius: 12px;
+    width: 300px;
+    height: 200px;
+}

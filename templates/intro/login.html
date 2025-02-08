@@ -22,7 +22,7 @@
             data-logo_alignment="left">    
         </div>
         <h2>OR</h2>
-        <form>
+        <form action="{% url 'main' %}" method="GET">
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="user@email.com" required>
